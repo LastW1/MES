@@ -561,6 +561,7 @@ void Grid::calculate_HB(long double tabHB[][4],long double ksi1, long double ksi
 	//}
 
 
+
 				for(int x = 0 ; x<4 ; x++){
 					p[x] += (tab[x][0] + tab[x][1])*a* (d / 2) * 100;
 					cout << p[x] << endl;

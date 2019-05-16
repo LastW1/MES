@@ -1,4 +1,2 @@
-﻿  Grid.cpp
-c:\users\lenovo\source\repos\cpp\mes_v2\mes_v2\grid.cpp(39): warning C4244: "argument": konwersja z "long double" do "int", możliwa utrata danych
-c:\users\lenovo\source\repos\cpp\mes_v2\mes_v2\grid.cpp(191): warning C4101: "jacobian": lokalna zmienna, do której nie istnieje odwołanie
+﻿  Main.cpp
   MES_v2.vcxproj -> C:\Users\Lenovo\source\repos\cpp\MES_v2\Debug\MES_v2.exe

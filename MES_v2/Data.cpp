@@ -76,10 +76,16 @@ Data::Data()
 	reader[2] = '0';
 	T0 = stof(reader);
 
+	plik >> reader;
+	reader[0] = '0';
+	reader[1] = '0';
+	reader[2] = '0';
+	TO = stof(reader);
+
 
 	plik.close();
 
-	long double wymiar = nH * nL;
+	wymiar = nH * nL;
 
 	Global_H = new long double *[wymiar];    //deklaracja GlobalH
 	for (int i = 0; i < wymiar; i++)
@@ -118,6 +124,16 @@ Data::Data()
 	for (int i = 0; i < wymiar; i++) {
 		for (int j = 0; j < wymiar; j++) {
 			H_final[i][j] = 0;
+		}
+	}
+
+	GausTable = new long double *[wymiar];    //deklaracja GausTable
+	for (int i = 0; i < wymiar; i++)
+		GausTable[i] = new long double[wymiar+1];
+
+	for (int i = 0; i < wymiar; i++) {
+		for (int j = 0; j < wymiar+1; j++) {
+			GausTable[i][j] = 0;
 		}
 	}
 

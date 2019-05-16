@@ -21,7 +21,9 @@ public:
 	~Grid();
 	void universal(Data*);
 	void matrixH(Data*);
-	void calculate_HB(long double [][4], long double, long double, long double, long double,long double, long double,long double[]);
-	void calculateP();
+	void zeros(Data*);
+	void calculate_HB(long double [][4], long double, long double, long double, long double,long double, long double,long double[],long double);
+	long double*gauss(int, long double **, long double *);
+	const double epsilon = 1e-11;
 };
 

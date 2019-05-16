@@ -6,6 +6,7 @@ public:
 	long double y;   //wsp y
 	long int id; 
 	bool boundary;
+	long double LocalT;
 	Node();
 	Node(long double, long double,int,bool);
 	~Node();
